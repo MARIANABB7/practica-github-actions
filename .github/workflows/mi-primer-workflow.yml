@@ -1,0 +1,13 @@
+name: Mi Primer Flujo de Trabajo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar mensaje en consola
+        run: echo "HOLA MUNDO"
